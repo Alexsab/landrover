@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	// Custom JS
+    // Custom JS
 
 });
 
@@ -8,15 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
 // инициация windows app
 "use strict";
 ! function(e) {
-    function c(o, n, t, e, i, a, l, s) {
-        c.version = o, 
-        c.token = n, 
-        c.on_page = t, 
-        c.model = e, 
-        c.page = i, 
-        c.several_models = a, 
-        c.callkeeper_hash = l, 
-        c.static_utm = s
+    function c(v, t, sutm) {
+        c.version = v, 
+        c.token = t, 
+        c.static_utm = sutm
     }
 
     function i(o, n, t, e) {
@@ -197,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
     t.enableScroll = s, 
     t.initMain = function() {
         var i = v(window).width();
-    	/* * /
+        /* * /
         if (v(".js-animate-brakepoint").scrollSpy(), v(".js-animate-brakepoint").on("scrollSpy:enter", function() {
                 v(this).closest(".auto-list__item").addClass("active")
             }), v(".inform .button").on("mouseenter", function() {
@@ -261,6 +256,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     n = new ymaps.Placemark(o, {
                         hintContent: "",
                         balloonContent: t
+                    }, { 
+                        preset: 'islands#darkGreenAutoIcon' 
                     });
                 e.geoObjects.add(n)
             }), 

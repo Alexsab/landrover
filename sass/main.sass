@@ -427,6 +427,42 @@ label.form__checkbox
 		&.has-error + span:before
 			background: #ff7d7d
 
+@keyframes a
+	0%
+		transform: rotate(0deg)
+
+	to
+		transform: rotate(1turn)
+
+.load
+	position: relative
+
+	&:before
+		display: block
+		width: 100%
+		height: 100%
+		background-color: hsla(0, 0%, 100%, 0.8)
+		z-index: 100
+
+	&:after, &:before
+		position: absolute
+		top: 0
+		left: 0
+		content: ""
+
+	&:after
+		right: 0
+		bottom: 0
+		z-index: 102
+		display: inline-block
+		margin: auto
+		width: 36px
+		height: 36px
+		border: 3px solid rgba(0, 0, 0, 0.2)
+		border-bottom-color: #000
+		border-radius: 50%
+		animation: a 1s infinite linear
+
 .map
 	margin: 100px 0 50px
 
