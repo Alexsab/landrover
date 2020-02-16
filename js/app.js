@@ -196,8 +196,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 
     t.enableScroll = s, 
     t.initMain = function() {
-    	/* * /
         var i = v(window).width();
+    	/* * /
         if (v(".js-animate-brakepoint").scrollSpy(), v(".js-animate-brakepoint").on("scrollSpy:enter", function() {
                 v(this).closest(".auto-list__item").addClass("active")
             }), v(".inform .button").on("mouseenter", function() {
