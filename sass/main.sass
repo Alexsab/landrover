@@ -2,4 +2,1238 @@
 
 // CUSTOM USER STYLES
 
+a
+	color: #0c121c
+	transition: .2s
+	outline: none
+	text-decoration: none
 
+	&:focus, &:hover
+		outline: none
+		text-decoration: none
+
+[data-fancybox]
+	cursor: pointer
+
+.wrapper
+	-ms-flex: 1 0 auto
+	flex: 1 0 auto
+	overflow: hidden
+	position: relative
+	max-width: 120rem
+
+.white
+	color: #fff
+	-webkit-tap-highlight-color: #fff
+
+.fontBold
+	font-weight: 700
+
+.container
+	width: 100%
+	max-width: 1300px
+	padding: 0 10px
+	margin: 0 auto
+
+img
+	max-width: 100%
+
+.hidden
+	display: none !important
+
+[role=button]
+	cursor: pointer
+
+svg
+	vertical-align: initial
+
+h2
+	font-family: Proxima Nova,serif
+	font-size: 36px
+	font-weight: 700
+	margin: 15px 0
+
+
+.header 
+	.fix_block
+		position: fixed
+		height: 83px
+		z-index: 999
+		background-color: #fff
+		max-width: none
+
+	&__row
+		display: -ms-flexbox
+		display: flex
+		-ms-flex-align: center
+		align-items: center
+		margin: 0 auto
+		max-width: 1300px
+
+	&__mmenu
+		display: none
+
+	&__logo
+		margin-right: auto
+		display: -ms-flexbox
+		display: flex
+		-ms-flex-align: center
+		align-items: center
+		padding: 10px 0
+
+		&-info
+			font-size: 14px
+			color: #0c121c
+			margin-left: 20px
+
+			span
+				font-size: 24px
+				text-transform: uppercase
+
+		&_right
+			margin-right: 0
+
+	&__contacts
+		display: -ms-flexbox
+		display: flex
+		margin-right: 90px
+
+		&:not(:first-child)
+			margin-left: 40px
+
+	&__phone
+		color: #0c121c
+		font-size: 24px
+		text-transform: uppercase
+
+		&:hover
+			color: #005a2b
+
+			a
+				color: #005a2b
+
+	&__address
+		font-size: 12px
+		color: rgba(12, 18, 28, 0.5)
+
+	&__callback
+		margin-left: auto
+		font-size: 14px
+		text-transform: uppercase
+		color: #0c121c
+		padding: 11px
+		margin-right: -11px
+		cursor: pointer
+
+		&:hover
+			background-color: #f0f0f0
+
+	&__nav
+		background: #f8f9f9
+		padding-top: 83px
+
+	&__mmenu, 
+	&__mobile
+		display: none
+
+.nav
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-align: center
+	align-items: center
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+
+	&__item
+		margin-right: 0
+
+		&:first-child
+			margin-left: -15px
+
+		&:last-child
+			margin-right: 0
+			margin-left: auto
+
+	&__link
+		display: block
+		font-size: 14px
+		text-transform: uppercase
+		color: #0c121c
+		padding: 12px 35px 14px
+		line-height: 1
+
+		&:hover
+			background-color: #f0f0f0
+
+.footer
+	width: 100%
+
+.footer__top
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-align: center
+	align-items: center
+	-ms-flex-pack: justify
+	justify-content: space-between
+	padding: 30px 0
+
+.footer__top-text
+	font-size: 12px
+
+.footer__to-top
+	letter-spacing: .25em
+	font-size: 12px
+	font-weight: 700
+	padding: 10px 20px
+
+	svg
+		width: 7px
+		height: 12px
+		display: inline-block
+		margin-left: 5px
+		position: relative
+		top: 2px
+
+	&:hover svg
+		fill: #fff
+
+.footer__bottom
+	background: #f6f6f6
+	padding: 25px 0 30px
+
+.footer__btn
+	min-width: 192px
+	text-align: center
+
+.footer__rules
+	font-size: 14px
+	line-height: 21px
+	margin-bottom: 24px
+
+.footer__rules_flex
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-pack: justify
+	justify-content: space-between
+	-ms-flex-align: end
+	align-items: end
+
+.footer__rules-btn
+	display: inline-block
+	font-size: 12px
+	line-height: 16px
+	letter-spacing: .1em
+	text-transform: uppercase
+	color: #4a4f54
+	padding-left: 14px
+	position: relative
+	margin-bottom: 15px
+
+	&:before
+		content: ""
+		width: 8px
+		height: 8px
+		background: url(../images/svg/ico_top.svg) no-repeat
+		background-size: contain
+		position: absolute
+		top: 3px
+		left: 0
+		transform: rotate(90deg)
+		transition: .2s
+
+	&.active:before
+		transform: rotate(180deg)
+
+.footer__txt
+	max-width: 1020px
+
+.modal
+	width: 100%
+	max-width: 400px
+	background: #f0f0f0
+	padding: 50px 46px
+	display: none
+
+.modal__title
+	text-align: center
+	font-size: 28px
+	margin: 0
+	font-weight: 700
+	margin-bottom: 30px
+
+.modal .under_title
+	text-align: center
+	margin-bottom: 30px
+
+.modal__form-label
+	font-size: 12px
+	letter-spacing: .1em
+	text-transform: uppercase
+	margin-bottom: 5px
+
+.modal .button
+	width: 100%
+	margin-top: 20px
+
+.modal__checkbox
+	margin-top: 15px !important
+
+.form__button
+	height: 50px
+	-ms-flex-item-align: end
+	align-self: flex-end
+
+.form__wrap
+	margin-right: 15px
+
+.form__text
+	display: block
+	width: 100%
+	border: 1px solid #f5f5f5
+	height: 50px
+	border-radius: 0
+	padding: 0 10px
+	transition: .2s
+	font-family: Land Rover Web,sans-serif
+	color: #0c121c
+	font-size: 16px
+	outline: none
+
+	&:focus, &:hover
+		border-color: #0c121c
+
+	&.has-error
+		border-color: #ff7d7d
+
+.button
+	display: inline-block
+	outline: none
+	border: 1px solid #0c121c
+	-webkit-appearance: none
+	background-color: #0c121c
+	color: #fff
+	font-weight: 400
+	font-size: 13px
+	letter-spacing: .085em
+	padding: 1.125rem 1.875rem
+	border-radius: 0
+	line-height: 1
+	transition: .2s
+	text-transform: uppercase
+	cursor: pointer
+
+	&:hover
+		background-color: #005a2b
+		border-color: #005a2b
+
+	&_white
+		border-color: #fff
+		background: #fff
+		color: #0c121c
+
+		&-isborder
+			border-color: #0c121c
+
+			&:hover
+				color: #fff
+
+		&-nobg
+			background: transparent
+			color: #fff
+
+		&:hover
+			color: #fff
+
+	&_inverse
+		background-color: #fff
+		color: #0c121c
+
+		&:hover
+			background-color: #0c121c
+			color: #fff
+
+	&_black
+		border-color: #fff
+
+		&-noborder
+			border: none
+
+	&_block
+		display: block
+		text-align: center
+
+
+label.form__checkbox
+	position: relative
+	display: -ms-inline-flexbox
+	display: inline-flex
+	padding-left: 0
+	font-weight: 400
+	cursor: pointer
+	-ms-flex-align: center
+	align-items: center
+	min-height: 18px
+	top: auto
+	left: auto
+	transform: none
+	font-size: 10px
+	line-height: 14px
+	letter-spacing: .1em
+	text-transform: uppercase
+	margin: 20px 0 0
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+	span a
+		border-bottom: 1px solid #0c121c
+
+		&:hover
+			border-color: transparent
+
+	input[type=checkbox]
+		position: absolute
+		top: 0
+		left: 0
+		width: 1px
+		height: 1px
+		opacity: 0
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+
+		+ span
+			padding-left: 28px
+			display: inline-block
+
+			&:before
+				content: ""
+				position: absolute
+				top: 1px
+				left: 0
+				display: inline-block
+				width: 14px
+				height: 14px
+				border-radius: 3px
+				transition: .2s
+				border: 1px solid #000
+				background: transparent
+
+		&:checked + span:before
+			border-color: #005a2b
+			background: #005a2b
+
+		&.has-error + span:before
+			background: #ff7d7d
+
+.map
+	margin: 100px 0 50px
+
+.map__row
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-align: stretch
+	align-items: stretch
+
+.map__col
+	-ms-flex: 1 1 100%
+	flex: 1 1 100%
+
+.map__col_left
+	max-width: 420px
+	margin-right: 50px
+
+.map__wrap
+	height: 100%
+
+	#map
+		width: 100%
+		height: 100%
+
+	[class*=ymaps-2][class*=-ground-pane]
+		filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale")
+		-webkit-filter: grayscale(100%)
+
+.map__item
+	padding: 25px
+	transition: .2s
+	cursor: pointer
+
+.map__item-name
+	font-size: 26px
+	line-height: 24px
+	text-transform: uppercase
+
+.map__item-info
+	margin-top: 15px
+	-ms-flex-align: center
+
+.map__item-ico, .map__item-info
+	display: -ms-flexbox
+	display: flex
+	align-items: center
+
+.map__item-ico
+	-ms-flex: 0 0 36px
+	flex: 0 0 36px
+	max-width: 36px
+	height: 36px
+	-ms-flex-pack: center
+	justify-content: center
+	-ms-flex-align: center
+	border: 1px solid #e4e8e8
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15)
+	border-radius: 50%
+	margin-right: 15px
+
+	svg
+		width: 18px
+		height: 20px
+		fill: #b0b7bb
+		transition: .2s
+
+.map__item-text
+	font-size: 16px
+	line-height: 22px
+	transition: .2s
+
+.map__item.active
+	background: #f6f6f6
+
+	.map__item-ico svg
+		fill: #005a2b
+
+	.map__item-text a
+		color: #4a4f54
+		font-size: 24px
+		font-weight: 700
+
+.map .button
+	margin-left: 25px
+	margin-top: 20px
+
+.night-models
+	margin: 25px 0 0
+	text-align: center
+	overflow: hidden
+
+.night-models__title
+	text-align: center
+	font-family: Proxima Nova,serif
+	color: #fff
+	font-size: 36px
+	font-weight: 700
+	display: inline-block
+	padding: 40px 0
+	margin: 0
+	border: 0
+
+.night-models__navs
+	background-color: #0c121c
+	margin-bottom: 40px
+
+.night-models__navs-row
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-align: stretch
+	align-items: stretch
+
+.night-models__navs-item
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-align: center
+	align-items: center
+	-ms-flex-pack: center
+	justify-content: center
+	-ms-flex: 1
+	flex: 1
+	font-size: 12px
+	color: #fff
+	text-transform: uppercase
+	transition: .2s
+	border: 0
+	padding: 13px 12px
+
+	&:hover
+		text-decoration: underline
+
+.night-models__item
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-align: center
+	align-items: center
+	height: 516px
+
+.night-models__img
+	-ms-flex: 0 0 50%
+	flex: 0 0 50%
+	position: relative
+	height: 516px
+
+	img
+		max-width: inherit
+		position: absolute
+		top: 0
+
+.night-models__img_left
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		right: 0
+		margin-top: -23px
+		width: 0
+		height: 0
+		border-right: 23px solid #0c121c
+		border-top: 23px solid transparent
+		border-bottom: 23px solid transparent
+		z-index: 2
+
+	img
+		right: 0
+
+.night-models__img_right
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -23px
+		width: 0
+		height: 0
+		border-left: 23px solid #0c121c
+		border-top: 23px solid transparent
+		border-bottom: 23px solid transparent
+		z-index: 2
+
+	img
+		left: 0
+
+.night-models__info
+	-ms-flex: 0 0 50%
+	flex: 0 0 50%
+	text-align: left
+	padding-left: 60px
+
+.night-models__info_left
+	padding-left: 0
+	padding-right: 50px
+
+.night-model
+	background-color: #0c121c
+	text-align: center
+	padding-bottom: 50px
+
+.night-model__links
+	font-size: 12px
+	font-family: Proxima Nova,serif
+	text-transform: uppercase
+	margin-bottom: 15px
+	display: -ms-flexbox
+	display: flex
+
+	span
+		display: inline
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA3SURBVHgBpY3BDQAwCAJJJ3AER3D/ZToK5W2sPryEz5EAIEgaMpKuXCWqMvblwUQ59ZPWnXp2D8mNTXdPbmvdAAAAAElFTkSuQmCC") no-repeat 0 3px
+		font-size: 12px
+		color: #fff
+		padding-left: 16px
+		margin-right: 50px
+		cursor: pointer
+
+		&:hover
+			text-decoration: underline
+
+.night-model__name
+	font-family: Proxima Nova,serif
+	color: #fff
+	font-size: 36px
+	font-weight: 700
+	text-transform: uppercase
+	letter-spacing: 2.16px
+	margin-top: 0
+	margin-bottom: 30px
+
+.night-model__ul
+	margin: 0
+	padding: 0
+	list-style: none
+	margin: 0 0 20px
+
+	li
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA3SURBVHgBpY3BDQAwCAJJJ3AER3D/ZToK5W2sPryEz5EAIEgaMpKuXCWqMvblwUQ59ZPWnXp2D8mNTXdPbmvdAAAAAElFTkSuQmCC") no-repeat 0 3px
+		font-size: 16px
+		font-family: Proxima Nova,serif
+		color: #fff
+		font-weight: 100
+		margin-bottom: 15px
+		padding-left: 16px
+
+		b
+			color: #fff
+
+		sup
+			font-size: 10px
+
+.night-model__count
+	color: #fff
+	font-family: Proxima Nova,serif
+	font-size: 24px
+	text-transform: uppercase
+	margin-bottom: 20px
+
+.night-model__btn
+	max-width: 300px
+	margin-bottom: 10px
+
+	&:last-child
+		margin-bottom: 0
+
+
+
+@media (max-width: 1800px)
+	.night-models__item
+		height: inherit
+
+	.night-models__img
+		height: inherit
+		overflow: hidden
+
+		img
+			max-width: 100%
+			position: inherit
+
+	.night-models__info
+		padding: 20px 0 20px 60px
+
+	.night-models__info_left
+		padding-left: 0
+		padding-right: 30px
+
+	.night-model__name
+		font-size: 24px
+		margin-bottom: 15px
+
+	.night-model__ul
+		margin: 15px 0
+
+		li
+			margin-bottom: 10px
+			font-size: 14px
+	
+
+// @media (max-width: 1782px)
+	
+
+// @media (max-width: 1582px)
+	
+
+// @media (max-width: 1520px)
+	
+
+// @media (max-width: 1424px)
+	
+
+// @media (max-width: 1358px)
+	
+
+@media (max-width: 1300px)
+	.container
+		max-width: 1140px
+		padding: 0 15px
+
+	.header__logo-info
+		font-size: 12px
+
+		span
+			font-size: 22px
+
+	.nav__item
+		margin-right: 0
+
+	.nav__link
+		font-size: 13px
+		padding: 12px 23px 14px
+
+	.map
+		margin: 50px 0
+
+	.map__col_left
+		max-width: 380px
+		width: 380px
+		margin-right: 30px
+
+	.map__item-name
+		font-size: 23px
+
+
+// @media (max-width: 1200px)
+	
+
+@media (max-width: 1139px)
+	.container
+		max-width: 990px
+	
+	.footer__to-top
+		font-size: 12px
+		padding: 10px 20px
+
+	.footer__rules
+		font-size: 12px
+
+	.map__item-text
+		font-size: 14px
+		line-height: 18px
+
+// @media (max-width: 991px)
+	
+
+// @media (max-width: 990px)
+	
+
+@media (max-width: 989px)
+	.container
+		max-width: 768px
+
+	h2
+		font-size: 28px
+
+	.header__logo img
+		max-width: 80px
+
+	.header__logo-info
+		margin-left: 15px
+		line-height: 15px
+
+		span
+			font-size: 20px
+			line-height: 1
+
+	.header__contacts
+		margin-right: 30px
+		margin-left: 30px
+
+	.header__contact
+		max-width: 155px
+
+		&:not(:first-child)
+			margin-left: 30px
+
+	.header__phone
+		font-size: 20px
+
+	.header__address
+		line-height: 14px
+
+	.header__callback
+		font-size: 12px
+		padding: 12px 10px 14px
+
+	.nav__item
+		margin-right: 0
+
+	.nav__link
+		font-size: 12px
+		padding: 12px 10px 14px
+
+	.button
+		padding: 13px 30px
+		text-align: center
+
+	.night-models__title
+		font-size: 30px
+
+	.night-models__navs-row
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+
+	.night-models__navs-item
+		-ms-flex: 0 0 33.33333%
+		flex: 0 0 33.33333%
+		border-bottom: 1px solid #0c121c
+		border-top: 1px solid #0c121c
+
+		&:first-child, &:nth-child(2)
+			border-bottom: none
+
+		&:nth-child(3)
+			border-bottom: none
+			border-right: 1px solid #0c121c
+
+	.night-models__item
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		margin-top: 30px
+		position: relative
+
+	.night-models__img
+		-ms-flex: 0 0 100%
+		flex: 0 0 100%
+
+		&:before
+			display: none
+
+	.night-models__info
+		-ms-flex: 0 0 400px
+		flex: 0 0 400px
+		max-width: 380px
+		position: absolute
+		background: #0c121c
+		color: #fff
+		left: 0
+		// top: 50%
+		top: 0
+		// transform: translateY(-50%)
+		z-index: 2
+		padding-right: 30px
+		padding-left: 30px
+
+	.night-models__info_left
+		padding-left: 30px
+
+	.footer__top-text
+		margin-right: 40px
+
+	.footer__to-top
+		min-width: 110px
+
+	.map
+		margin-bottom: 0
+
+	.map__row
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+
+	.map__col_left
+		-ms-flex: 0 0 100%
+		flex: 0 0 100%
+		width: 100%
+		margin-right: 0
+		max-width: 100%
+		display: -ms-flexbox
+		display: flex
+
+		.button
+			display: none
+
+	.map__item
+		-ms-flex: 0 0 50%
+		flex: 0 0 50%
+
+	.map__item-name
+		margin-bottom: 15px
+		font-size: 20px
+
+	.map__item-info
+		margin-top: 5px
+
+	.map__item.active a.map__item-text
+		font-size: 20px
+
+	.map__wrap
+		height: 350px
+
+// @media (max-width: 768px)
+	
+
+@media (min-width: 768px) and (max-width: 1139px)
+	.header__callback span
+		display: none
+
+@media (max-width: 767px) and (max-height: 450px)
+	.header__mobile
+		.button, .header__contacts
+			display: none
+
+		.header__nav
+			margin-top: 0
+
+@media (max-width: 767px)
+	body
+		-ms-flex-align: inherit
+		align-items: inherit
+
+	.container
+		max-width: 414px
+
+	.header .fix_block
+		height: auto
+
+	.header__logo
+		margin-right: 0
+
+		img
+			max-width: 60px
+			margin-right: 0
+
+	.header__logo-info
+		margin-left: 10px
+		line-height: 1px
+		font-size: 0
+		color: transparent
+		display: none
+
+		br
+			display: none
+
+		span
+			color: #0c121c
+			font-size: 20px
+			line-height: 1
+
+	.header__logo_right
+		display: none
+
+	.header__contacts
+		margin: 0 auto
+
+		.header__address, .header__logo_right
+			display: none
+
+	.header__visible
+		-ms-flex-direction: column
+		flex-direction: column
+		margin: 0 auto
+
+		.header__contact
+			margin-left: 0
+
+			span
+				font-size: 16px
+
+	.header__nav
+		display: none
+		padding-top: 0
+
+	.header__mmenu
+		display: block
+		width: 25px
+		height: 25px
+		position: relative
+
+		&:before
+			top: 9px
+
+		&:after, &:before
+			content: ""
+			width: 25px
+			height: 1px
+			background: #0c121c
+			display: block
+			position: absolute
+			left: 0
+			transition: .2s
+
+		&:after
+			top: 16px
+
+		&.active
+			&:before
+				transform: rotate(-45deg)
+				top: 11px
+
+			&:after
+				transform: rotate(45deg)
+				top: 11px
+
+	.header__mobile
+		display: none
+		height: 100vh
+		padding-bottom: 15px
+
+		.header__logo_right
+			display: inline-block
+
+		.header__contacts
+			display: -ms-flexbox
+			display: flex
+			margin: 30px 0
+			-ms-flex-pack: justify
+			justify-content: space-between
+
+			.header__address
+				display: block
+				margin-top: 10px
+
+		.header__nav
+			display: block
+			background: none
+			margin-top: 20px
+
+			.container
+				padding: 0
+
+			.header__row
+				width: 100%
+
+		.header__phone
+			font-size: 18px
+
+		.header__address
+			font-size: 10px
+			line-height: 13px
+
+		.header__contact
+			max-width: 136px
+
+			&:not(:first-child)
+				margin-left: 15px
+
+		.header__callback
+			font-size: 14px
+			text-align: center
+
+		.button
+			display: block
+			width: 180px
+			margin: 20px auto
+			padding: 11px 15px
+
+	.nav__item
+		margin-right: 0
+		-ms-flex: 0 0 100%
+		flex: 0 0 100%
+		margin: 0
+
+		&:first-child
+			margin-left: 0
+
+		&:last-child
+			margin-right: 0
+
+	.nav__link
+		display: inline-block
+		font-size: 14px
+		padding: 9px 10px 11px 0
+
+		&:hover
+			background: transparent
+
+	.footer__rules_flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+
+	.footer__btn
+		width: 100%
+		margin-bottom: 1em
+
+	.footer__txt
+		-ms-flex-order: 1
+		order: 1
+
+	.footer__top
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		padding-top: 10px
+		padding-bottom: 20px
+
+	.footer__to-top
+		width: 100%
+		flex: 0 0 100%
+		order: -1
+		margin-bottom: 20px
+		padding: 12px 15px
+
+	.footer__rules
+		line-height: 18px
+
+	.modal
+		padding: 25px
+
+	.modal__title
+		font-size: 24px
+		margin-bottom: 20px
+
+	.form__wrap
+		width: 100%
+		margin: 0
+
+	.button
+		padding: 17px 15px
+
+	.map
+		margin-top: 40px
+
+		.container
+			padding: 0
+
+	.map__col_left
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+
+	.map__item
+		-ms-flex: 0 0 100%
+		flex: 0 0 100%
+
+	.map__item-name
+		margin-bottom: 20px
+		font-size: 22px
+
+	.map__wrap
+		height: 250px
+
+	.night-models__title
+		font-size: 22px
+		display: block
+		padding-bottom: 20px
+
+	.night-models__navs
+		display: none
+
+	.night-models__info
+		-ms-flex: 0 0 100%
+		flex: 0 0 100%
+		max-width: 100%
+		position: inherit
+		background: #0c121c
+		color: #fff
+		left: 0
+		top: 0
+		transform: none
+		z-index: 2
+		padding-right: 0
+		padding-left: 0
+
+	.night-models__info_left
+		padding-left: 0
+
+	.night-models__img
+		-ms-flex-order: 1
+		order: 1
+
+	.night-models__info
+		-ms-flex-order: 2
+		order: 2
+
+	.night-model__links
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+
+		span
+			margin-bottom: 7px
+
+	.night-model__btn
+		max-width: 100%
+
+	.night-model__name
+		font-size: 20px
+
+		br
+			display: none
+
+	.night-model__count
+		font-size: 19px
+
+
+// @media (max-width: 500px)
+	
+
+// @media (max-width: 400px)
+	
+
+// @media (max-width: 375px)
+	
+
+// @media (max-width: 360px)
+	
